@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Salário Líquido</title>
+    <style>
+        * {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        header,
+        footer {
+            background-color: #006400;
+            color: #fff;
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+            <br>
+            FOLHA DE PAGAMENTO <br>
+            <br>
+    </header>
+    <script>
+        let salarioBruto = 0.00;
+        let nome = "";
+        let tipo = 0;
+        salarioBruto = prompt("Informe o salário bruto: ")
+        nome = prompt("Informe o nome : ")
+        tipo = prompt("informe o tipo[1=CLT, 2=PJ, 3=Comissionado]: ")
+        let salarioLiquido = 0.00;
+        document.open();
+        document.write("<h1>DADOS DO PAGAMENTO</h1>");
+        document.write("<br>");
+        if (tipo == 1) {
+            salarioLiquido =
+                parseFloat(salarioBruto) - parseFloat(salarioBruto * 0.30);
+            document.write("Nome: " + nome + "<br>");
+            document.write("Sálario bruto: " + salarioBruto + "<br>");
+            document.write("Tipo: Colaborador CLT<br>")
+            document.write("Salário líquido: " + salarioLiquido.toFixed(2) + "<br>")
+        }
+        else if (tipo == 2) {
+            salarioLiquido =
+                parseFloat(salarioBruto) - parseFloat(salarioBruto * 0.30);
+            document.write("Nome: " + nome + "<br>");
+            document.write("Sálario bruto: " + salarioBruto + "<br>");
+            document.write("Tipo: Colaborador Pessoa Jurídica<br>")
+            document.write("Salário líquido: " + salarioLiquido.toFixed(2) + "<br>")
+        }
+        else {
+            salarioLiquido =
+                parseFloat(salarioBruto) - parseFloat(salarioBruto * 0.30);
+            document.write("Nome: " + nome + "<br>");
+            document.write("Sálario bruto: " + salarioBruto + "<br>");
+            document.write("Tipo: Colaborador Comissionado<br>")
+            document.write("Salário líquido: " + salarioLiquido.toFixed(2) + "<br>")
+        }
+        document.write("<br>");
+        document.close();
+    </script>
+
+    <button class="botao" title="Fechar..." name="btn" value="#" onclick="fechar()" type="button"> Fechar
+    </button>&nbsp&nbsp&nbsp&nbsp
+    <script>
+        function fechar() {
+            alert("MENSAGEM\n" + "formulário será fechado...");
+            close();
+        }
+    </script>
+    <br>
+
+    <footer>
+        <br>
+        Byta Bug LTDA <br>
+        <br>
+        Responsável: Tunda
+    </footer>
+</body>
+
+</html>
