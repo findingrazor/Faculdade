@@ -12,4 +12,4 @@ Nessa matéria, como o próprio nome diz, aprendemos o básico de formatação H
 #### Linguagem e Técnica de Programação
 Aqui utilizávamos Java pra entender alguns conceitos básicos como lógica, estruturas de repetição e decisão, métodos/funções, operadores matemáticos e lógicos, entre outras coisas como armazenamento em .DAT. Essa matéria foi importante pra mim pessoalmente pois ela me deu muita base não so na linguagem mas nas outras matérias até em outras linguagens que aprendi como C e Programação Orientada a Objeto. No projeto final, como da pra ver dentro da minha workspace, fizemos um armazenamento de carros, porém, fiquei encarregada apenas da parte de inclusão de dados, depois pretendo pegar o código completo e colocar aqui também
 
-### Segundo Período
+### Terceiro Período
