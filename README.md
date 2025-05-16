@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Óla! Esse repositório vai ser destinado a postar todos os projetos que já fiz na faculdade separados pelas respectivas matérias de cada um! Talvez alguns códigos estejam incompletos, especialmente os do primeiro período, mas a intenção aqui é documentar minha trajetória na faculdade e servir de portfólio caso alguém se interesse. Abaixo vou dar um breve resumo sobre cada matéria e vou deixar separado por períodos também. Vamos lá
+Oi! Esse repositório vai ser destinado a postar todos os projetos que já fiz na faculdade separados pelas respectivas matérias de cada um! Talvez alguns códigos estejam incompletos, especialmente os do primeiro período, mas a intenção aqui é documentar minha trajetória na faculdade e servir de portfólio caso alguém se interesse. Abaixo vou dar um breve resumo sobre cada matéria e vou deixar separado por períodos também. Vamos lá
 
 ### Primeiro Período
 
