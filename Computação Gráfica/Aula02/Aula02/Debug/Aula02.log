@@ -1,0 +1,3 @@
+﻿  Origem.cpp
+C:\Clarisse Faculdade\testes\computacaografica\Aula02\Origem.cpp(135,6): warning C4326: tipo de retorno de 'main' deve ser 'int' em vez de 'void'
+  Aula02.vcxproj -> C:\Clarisse Faculdade\testes\computacaografica\Aula02\Debug\Aula02.exe
