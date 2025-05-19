@@ -15,13 +15,13 @@ Aqui utilizávamos Java pra entender alguns conceitos básicos como lógica, est
 ### Terceiro Período
 
 #### Programação Orientada a Objeto
-...
+A introdução a Orientação a Objeto foi feita com Java, aprendemos todo conceito de Classe, Objeto, Interface, Herança, Polimorfismo, Encapsulamento e tudo que diz respeito a essa área da programação. Fizemos vários exercícios e aqui até consegui disponibilizar a correção de uma de minhas provas. Nosso projeto final foi uma interface Gráfica integrada com o banco de dados desenvlvido na matéria de mesmo nome, pórem, esse projeto esta em outro repositório no meu perfil, pois precisamos do GitHub para fazê-lo em grupo
 
 #### Estrutura de Dados I
-...
+Já nessa matéria, aprendemos vários conceitos relacionados a estruturas diversas como Vetores e Structs na linguagem C, assim como conceitos relacionados a memória e funções como Alocação, Ponteiros e aritmética entre eles, Funções propriamente ditas, criação de Bibliotecas, Recursividade, Passagem de Parâmetro por Valor, entre outras coisas mais específicas a linguagem. Já no projeto final, tivemos de aplicar todos os conhecimentos em um sistema ERP básico. Este projeto, assim como POO, não está neste repositório, pois utilizamos um separados por se tratar de um projeto em grupo  
 
 #### Computação Gráfica
 ...
 
 #### Banco de Dados
-...
+Aprendemos o básico necessário sobre a linguagem SQL e o conceito de Bancos de Dados relacionais. Utilizando o SQLServer, fizemos a criação, manutenção e consulta em diversos Bancos, disponibilizados pelo professor e criados por nos também. Vou disponibilizar apenas os scripts de exercícios e trabalhos que fiz por não ser possível disponibilizar um banco inteiro aqui, mas acredito que pela estruturação dos comandos já seja capaz de se ver o que fiz e aprendi nessa matéria. O trbalho final foi feito com base em uma modelagem específica passada pelo professor, também irei disponibilizar estes scripts aqui caso seja do interesse
