@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 22px;
+            color: #0000FF;
+        }
+    </style>
+</head>
+<body>
+    <h1>QUANTIDADE APROXIMADA DE DIAS VIVIDOS</h1>
+    <script>
+        // calcula a quantidade de dias vividos
+        let nome = prompt("Informe o nome: ");
+        let idade = prompt("Informe a idade: ")
+        let dias = idade * 365;
+        let resultado = nome + ", você viveu aproximadamente " +dias+ " dias";
+        alert(resultado);
+        document.open();
+        document.write(resultado);
+        document.close();
+        console.log(resultado);
+    </script>
+    <br>
+    <footer>
+        <h3>Bytabug Ltda</h3>
+        Sistemas e Inovações
+    </footer>
+</body>
+</html>

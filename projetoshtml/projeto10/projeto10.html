@@ -1,0 +1,183 @@
+<!--
+     Clarisse Amaral
+     23/04/2024
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Formulários</title>
+    <style type="text/css">
+        * {
+            border: 0px;
+            padding: 0px;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        .info {
+            padding-top: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6rem;
+            text-align: justify;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 0px;
+        }
+
+        .secao {
+            background-color: #9ACD32;
+            box-shadow: 10px 10px #008000;
+            padding: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.8rem;
+            padding-bottom: 0px;
+        }
+
+        .secao form {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6rem;
+            padding-left: 0px;
+        }
+
+        nav {
+            text-align: right;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.6rem;
+            margin-right: 2%;
+            word-spacing: 10px;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000000;
+            transition: all 400ms ease-in-out;
+        }
+
+        a:hover {
+            background-color: #DEDEDE;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="https://www.w3schools.com/html/html_forms.asp" target="_blank">Forms</a>
+            <a href="https://www.w3.org/WAI/tutorials/menus/structure/" target="_blank">Menu</Menu></a>
+            <a href="pages/mensagem.html">Sobre</a>
+        </nav>
+    </header>
+
+
+
+
+    <section class="secao">
+        <h1>Formulários</h1>
+
+
+
+        <p class="info">São páginas HTML que permitem a inserção de dados (como nome, endereço, telefone etc.) , esse
+            dados
+            posteriormente serão enviados a um servidor WEB para processamento (inserção dos dados em um
+            banco de dados, execução de um cálculo etc.). Os formulários são definidos com a tag "form", dentro do
+            bloco "form" são incluídos, labels, caixas de texto, botões etc. que farão parte do funcionamento do
+            formulário.</p>
+    </section>
+
+    <br><br>
+
+    <section class="secao" id="form">
+
+        <h2>Dados do Cliente</h2>
+
+        <form action="#" method="get" target="_blank">
+
+            <p class="form">
+                <label for="matricula">Matrícula:</label><br>
+                <input type="text" id="matricula" name="matricula" placeholder="Insira sua matrícula" size="8">
+            </p>
+
+            <p class="form">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Insira o seu nome" size="25">
+            </p>
+
+            <p class="form">
+                <label for="fone">Telefone:</label><br>
+                <input type="tel" id="fone" name="fone" placeholder="Insira o seu telefone">
+            </p>
+
+            <p>
+                <input type="checkbox" id="uml" name="curso" value="UML">
+                <label for="uml">Treinamento UML</label><br>
+
+                <input type="checkbox" id="testes" name="curso" value="TESTES">
+                <label for="testes">Treinamento Testes</label><br>
+
+                <input type="checkbox" id="devops" name="curso" value="DEVOPS">
+                <label for="devops">Treinamento Devops</label><br>
+            </p>
+
+            <p>
+                <label for="">Escolha o Tipo de Pagamento</label><br><br>
+
+                <input type="radio" id="pix" name="tipopg" value="PIX">
+                <label for="pix">PIX</label><br>
+
+                <input type="radio" id="debito" name="tipopg" value="DEBITO">
+                <label for="debito">Débito</label><br>
+
+                <input type="radio" id="dinheiroespecie" name="tipopg" value="DINHEIRO/ESPECIE">
+                <label for="dinheiroespecie">Dinheiro/Especie</label><br>
+
+                <input type="radio" id="credito" name="tipopg" value="CREDITO">
+                <label for="credito">Crédito</label>
+            </p>
+
+            <p>
+                <label for="">Insira a sua formação básica</label><br><br>
+                <textarea class="conhecimento" name="conhecimento" id="conhecimento" cols="20" rows="5"
+                    title="Informe seu conhecimento (opcional), máximo 5 linhas">
+                </textarea>
+            </p>
+
+            <p>
+                <label for="local">Escolha o local</label><br><br>
+
+                <select  id="local" name="local">
+                    <option value="0">Selecione o local:</option>
+                    <option value="CENTRO">Centro</option>
+                    <option value="FUNCIONARIOS">Funcionários</option>
+                    <option value="STAEFIGINEIA">Sta Efigênia</option>
+                    <option value="SAVASSI">Savassi</option>
+                </select>
+            </p>
+
+            <br><br><br>
+
+            <p>
+                <input type="reset" value="Cancelar" title="Limpar dados">
+                <input type="submit" value="Confirmar" title="Enviar dados">
+            </p>
+        </form>
+
+    </section>
+
+</body>
+
+</html>

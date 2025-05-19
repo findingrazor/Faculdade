@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Notas</title>
+    <style>
+        section {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #d3d3d3;
+            margin-left: 5px;
+            padding: 3px;
+            width: 50%;
+        }
+        .acima {
+            color: #0000ff;
+        }
+
+        .abaixo {
+            color: #ff0000;
+        }
+
+        header, footer {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #000;
+            color: #fff;
+            padding: 5px;
+            margin-left: 5px;
+            width: 50%;
+        }
+
+        #botoes {
+            border: 3px;
+            border-style: groove;
+            background-color: #808080;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resultados</h1>
+    </header>
+    <script>
+        let media = 0.0;
+        let quantidade = 0;
+        let soma = 0;
+        let notas = [];
+        for (let i=0; i<5; i++) {
+            notas[i] = parseInt(prompt("Informe a nota ["+(i+1)+"]: "));
+            soma = soma + notas[i];
+            quantidade = quantidade + 1;
+        }
+
+        media = soma / quantidade;
+        document.open();
+        document.write("<section>");
+        document.write("<p>Soma das notas: " + soma + "</p>");
+        document.write("<p>Quantidade de notas: " + quantidade + "</p>");
+        document.write("<p>Média das notas: " + media.toFixed(2) + "</p>");
+        document.write("<h2>NOTAS ACIMA DA MÉDIA</h2>");
+        for (let i=0; i<5; i++) {
+            if (notas[i] > media) {
+                document.write("<p class=\"acima\"> Nota: " +notas[i] +"</p>")
+            }
+        }
+        document.write("<h2>NOTAS ABAIXO DA MÉDIA</h2>");
+        for (let i=0; i<5; i++) {
+            if (notas[i] < media) {
+                document.write("<p id=\"nome\" class=\"abaixo\"> Nota: " +notas[i] +"</p>")
+            }
+        }
+        document.write("</section>")
+    </script>
+    <footer>
+        <h3>Apuração das notas finalizada</h3>
+    </footer>
+    <br>
+    <script>
+        document.write("<button id=\"botoes\" title=\"Fechar o formulário...\" "
+        + "name=\"btn_fechar\" value=\"OK\" type=\"button\" onclick=\"fechar()\"> Fechar </button>");
+        document.write("</div>");
+        document.write("</section>");
+        document.close();
+        function fechar() {
+            alert("O formulário será fechado...")
+            close();
+        }
+    </script>
+</body>
+</html>
