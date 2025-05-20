@@ -36,8 +36,6 @@
   front end mas não tenho esse código e não divergiu muito do que já esta aqui
 </h4>
 
-<br>
-
 <h3>
   Linguagem e Técnica de Programação
 </h3>
