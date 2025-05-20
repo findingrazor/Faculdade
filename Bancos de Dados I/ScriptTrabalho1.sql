@@ -61,4 +61,13 @@ ALTER TABLE detalhes ADD CONSTRAINT fk_detalhes_codProduto FOREIGN KEY (codProdu
 ALTER TABLE produto ADD CONSTRAINT fk_produto_codMidia FOREIGN KEY (codMidia) REFERENCES midia (codMidia);
 ALTER TABLE produto ADD CONSTRAINT fk_produto_codGenero FOREIGN KEY (codGenero) REFERENCES genero (codGenero);
 
+ALTER TABLE cliente ADD CONSTRAINT uq_cliente_cpf UNIQUE (cpf);
+ALTER TABLE pagamento ADD CONSTRAINT uq_pagamento_formaPag UNIQUE (formaPag);
+ALTER TABLE midia ADD CONSTRAINT uq_midia_tipo UNIQUE (tipo);
+ALTER TABLE genero ADD CONSTRAINT uq_genero_genero UNIQUE (genero);
+
+ALTER TABLE cliente ADD CONSTRAINT df_cliente_email DEFAULT 'sememail@nada.com' FOR email;
+
+ALTER TABLE detalhes ADD CONSTRAINT vlrTotal_ck CHECK (valorTotal > 0);
+
     
