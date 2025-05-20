@@ -83,7 +83,7 @@
    Computação Gráfica
  </h3>
  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=visualstudio" width=30/>
+    <img src="https://skillicons.dev/icons?i=cpp,visualstudio" width=60/>
 </a>
  <h4>
    ...
