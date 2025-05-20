@@ -63,7 +63,7 @@
     <img src="https://skillicons.dev/icons?i=java,eclipse" width=60/>
 </a>
 <h4>
-  A introdução a Orientação a Objeto foi feita com Java, aprendemos todo conceito de Classe, Objeto, Interface, Herança, Polimorfismo, Encapsulamento e tudo que diz respeito a essa área da programação. Fizemos vários exercícios e aqui até consegui disponibilizar a       
+  A introdução a Orientação a Objeto foi feita com Java, aprendemos todo conceito de Classe, Objeto, Interface, Herança, Polimorfismo, Encapsulamento e tudo que diz respeito a essa área da programação. Fizemos vários exercícios e aqui até consegui disponibilizar a      
   correção de uma de minhas provas. Nosso projeto final foi uma interface Gráfica integrada com o banco de dados desenvlvido na matéria de mesmo nome, pórem, esse projeto esta em outro repositório no meu perfil, pois precisamos do GitHub para fazê-lo em grupo
 </h4>
 
@@ -86,7 +86,8 @@
     <img src="https://skillicons.dev/icons?i=cpp,visualstudio" width=60/>
 </a>
  <h4>
-   ...
+   Essa matéria, como o próprio nome já diz, esta relacionada a área de ciração de imagens/vídeos com códigos. Aprendemos os conceitos de imagens primeiro como fenômenos de percepção do olho humano, tipos de imagem (raster e vetorial), espaço cor, espaço ocupado por 
+ imagens e vídeos, entre outros. Os códigos em si são bem simples pois essa é uma área muito vasta da computação e que tem uma especialização própria e essa matéria foi apenas introdutória a essa parte da programação
  </h4>
 
 <h3>
