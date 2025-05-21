@@ -107,6 +107,6 @@
  Aprendemos o básico necessário sobre a linguagem SQL e o conceito de Bancos de Dados relacionais. Utilizando o SQLServer, fizemos a criação, manutenção e consulta em diversos Bancos, 
  disponibilizados pelo professor e criados por nos também. Vou disponibilizar apenas 
  os scripts de exercícios e trabalhos que fiz por não ser possível disponibilizar um banco inteiro aqui, mas acredito que pela estruturação dos comandos já seja capaz de se ver o que fiz e aprendi 
- nessa matéria. O trbalho final foi feito com base em uma modelagem 
+ nessa matéria. O trabalho final foi feito com base em uma modelagem 
  específica passada pelo professor, também irei disponibilizar estes scripts aqui caso seja do interesse
 </h4>
