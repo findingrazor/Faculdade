@@ -1,7 +1,7 @@
 USE controlevendas;
 
 CREATE TABLE cliente(
-	codCliente int not null,
+	codCliente int identity not null,
     nome varchar (30) not null,
     cpf char (11) not null,
     endereço varchar(40) null,
