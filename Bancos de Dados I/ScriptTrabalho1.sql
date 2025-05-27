@@ -1,6 +1,7 @@
 USE controlevendas;
 
 CREATE TABLE cliente(
+	
 	codCliente int identity not null,
     nome varchar (30) not null,
     cpf char (11) not null,
@@ -10,13 +11,13 @@ CREATE TABLE cliente(
 );
 
 CREATE TABLE pedido(
-	codPedido int not null,
+	codPedido int identity not null,
     codCliente int not null,
     codPag int not null
 );
 
 CREATE TABLE pagamento(
-	codPag int not null,
+	codPag int identity not null,
     formaPag varchar (11) not null
 );
 
@@ -24,12 +25,13 @@ CREATE TABLE detalhes(
 	codPedido int not null,
     codProduto int not null,
     qntdProd int not null,
+	valorUni float not null,
     desconto float null,
     valorTotal float not null
 );
 
 CREATE TABLE produto(
-	codProduto int not null,
+	codProduto int identity not null,
     codMidia int not null,
     codGenero int not null,
     qntdEstoque int not null,
@@ -37,12 +39,12 @@ CREATE TABLE produto(
 );
 
 CREATE TABLE midia(
-	codMidia int not null,
+	codMidia int identity not null,
     tipo varchar(5) not null
 );
 
 CREATE TABLE genero(
-	codGenero int not null,
+	codGenero int identity not null,
     genero varchar(7)
 );
 
@@ -70,4 +72,4 @@ ALTER TABLE cliente ADD CONSTRAINT df_cliente_email DEFAULT 'sememail@nada.com' 
 
 ALTER TABLE detalhes ADD CONSTRAINT vlrTotal_ck CHECK (valorTotal > 0);
 
-    
+ALTER TABLE produto ADD produto varchar(40) not null;
