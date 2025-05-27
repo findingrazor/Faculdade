@@ -8,3 +8,10 @@ int main(){
     return 0;
 }
 
+No* inserirInicioLista(No* lista){
+
+}
+
+void impressao(No *lista){
+
+}
