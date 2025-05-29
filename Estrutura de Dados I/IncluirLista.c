@@ -5,6 +5,8 @@
 int main(){
     No *lista = NULL;
     lista =  inserirInicioLista(lista);
+    lista =  inserirInicioLista(lista);
+    impressao(lista);
     return 0;
 }
 
