@@ -18,7 +18,7 @@ No* inserirInicioLista(No *inicio){
 }
 
 void impressao(No *lista){
-    if(inicio == NULL){
+    if(lista == NULL){
         printf("Lista Vazia\n");
         return;
     }
