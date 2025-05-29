@@ -18,6 +18,10 @@ No* inserirInicioLista(No *inicio){
 }
 
 void impressao(No *lista){
+    if(inicio == NULL){
+        printf("Lista Vazia\n");
+        return;
+    }
     No *atual = lista;
     while(atual != NULL){
         printf("Código: %d\n", atual->codigo);
