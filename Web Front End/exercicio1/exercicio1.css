@@ -1,0 +1,41 @@
+.div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#jogada1{
+    max-height: 10px;
+}
+
+#jogada2{
+    max-height: 10px;
+}
+
+#checar{
+    color: aliceblue;
+    background-color: blue;
+    border-style: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+#limpar{
+    color: aliceblue;
+    background-color: blue;
+    border-style: none;
+    padding: 10px 20px; 
+    font-size: 14px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+#checar:hover {
+    background-color: darkblue;
+}
+
+#limpar:hover {
+    background-color: darkblue;
+}
