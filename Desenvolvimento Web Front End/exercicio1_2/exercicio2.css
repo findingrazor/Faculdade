@@ -1,0 +1,16 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: darkblue;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Contas Hotel</title>
+    <link rel="stylesheet" href="exercicio2.css">
+</head>
+<body>
+    <h1>Controle de Contas Hotel</h1>
+    <label>
+        Nome do Hóspede: 
+        <input id="hospede">
+    </label>
+    <br><br>
+    <label>
+        Check-in................: 
+        <input id="cin" type="number">
+    </label>
+    <br><br>
+    <label>
+        Check-out..............: 
+        <input id="cout" type="number">
+    </label>
+    <br><br>
+    <label>
+        Tipo de Quarto......: 
+        <select name="quarto" id="tipo">
+            <option value="120">Standard</option>
+            <option value="150">Luxo</option>
+            <option value="180">Super-Luxo</option>
+        </select>
+    </label>
+    <br><br>
+    <label>
+    Nome da Cidade...: 
+    <input id="cidades">
+    </label>
+    <br><br>
+    <label>
+        <p id="vlrConta">Valor da Conta: </p>
+    </label>
+    <br><br>
+    <button id="calcular">Calcular</button>
+    <button id="inserir">Novo</button>
+    <button id="relatorio">Relatorio Contas Acima Média</button>
+    <h2 id="resultado"></h2>
+    <h4 id="lista"></h4>
+    <script src="exercicio2.js"></script>
+</body>
+</html>
