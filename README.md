@@ -110,3 +110,25 @@
  nessa matéria. O trabalho final foi feito com base em uma modelagem 
  específica passada pelo professor, também irei disponibilizar estes scripts aqui caso seja do interesse
 </h4>
+
+<br><br>
+
+<h2 align=left>
+  Quarto Período
+</h2>
+
+<h3>
+  Desenvolvimento Web Front End
+</h3>
+<a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=visualstudio,javascript" width=60/>
+</a>
+<h4>
+ Essa matéria foi um aprofundamento da Introdução ao Desenvolvimento Web, utilizamos Javascript, Angular e diversos frameworks para desenvolver telas. Aqui não coloquei o código com o Angular e os frameworks visto que tem um repositório próprio pra isso. Aqui tenho apenas códigos em Javascript simples desenvolvidos em sala para aprendermos mais sobre a linguagem e sobre a lógica do front end 
+</h4>
+
+<br><br>
+
+<h2 align=left>
+  Quinto Período
+</h2>
