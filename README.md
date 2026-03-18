@@ -155,4 +155,16 @@
  A parte inicial da matéria deu uma introdução sobre a própria linguagem python, apresentando tipos simples e complexos, declaração de funções e outros conceitos básicos da linguagem python
 </h4>
 
+<br><br>
+
+<h3>
+  Desenvolvimento Web Back-End
+</h3>
+<a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=eclipse,java,postman" width=90/>
+</a>
+<h4>
+ Nessa disciplina aprendemos mais sobre a parte Back-End da Web, englobando conceitos como protocolo HTTP e seus métodos (GET, POST, REQUEST...), sessão, contexto e mais. Foram desenvolvidos códigos simples para aprendizado e aplicação desses conceitos com o Java no Eclipse usando o Tomcat para rodar os servidores, além do uso do Postman para estudos relacionados justamente a requisição em APIs externas
+</h4>
+
 
