@@ -132,3 +132,27 @@
 <h2 align=left>
   Quinto Período
 </h2>
+
+<h3>
+  Estruturas de Dados II
+</h3>
+<a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=eclipse,c" width=60/>
+</a>
+<h4>
+ Nessa disciplina, diferente de EDI que tinha um foco em apresentar a linguagem e introduzir as estruturas, o foco foi aprofundar em estruturas como listas (pilhas, filas), tabela hash, árvores binárias dentro outros. Foi revisionado alguns conceitos como recurssividade e bibliotecas além da utilização do Eclipse para a criação dos processos
+</h4>
+
+<br><br>
+
+<h3>
+  Analytics com Python
+</h3>
+<a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python" width=30/>
+</a>
+<h4>
+ A parte inicial da matéria deu uma introdução sobre a própria linguagem python, apresentando tipos simples e complexos, declaração de funções e outros conceitos básicos da linguagem python
+</h4>
+
+
