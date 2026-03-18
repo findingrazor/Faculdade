@@ -140,7 +140,7 @@
     <img src="https://skillicons.dev/icons?i=eclipse,c" width=60/>
 </a>
 <h4>
- Nessa disciplina, diferente de EDI que tinha um foco em apresentar a linguagem e introduzir as estruturas, o foco foi aprofundar em estruturas como listas (pilhas, filas), tabela hash, árvores binárias dentro outros. Foi revisionado alguns conceitos como recurssividade e bibliotecas além da utilização do Eclipse para a criação dos processos
+ Nessa disciplina, diferente de EDI que tinha um foco em apresentar a linguagem e introduzir as estruturas, o foco foi aprofundar em estruturas como listas (pilhas, filas), tabela hash, árvores binárias, dentro outros. Foram revisados alguns conceitos como recurssividade e bibliotecas além da utilização do Eclipse para a criação dos processos
 </h4>
 
 <br><br>
