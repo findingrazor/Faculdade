@@ -39,15 +39,23 @@ public class AdicionarItemServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 		HttpSession session = request.getSession();
-		List<String> itens = (List<String>)session.getAttribute("carrinho");
+		List<Produto> itens = (List<Produto>)session.getAttribute("carrinho");
 		if(itens == null) {
 			itens = new ArrayList<>();
 		}
-		String produto = request.getParameter("produto");
-		if(produto != null && !produto.trim().isEmpty()) {
-			itens.add(produto);
+		String nome = request.getParameter("produto");
+		double preco = Double.parseDouble(request.getParameter("preco")); 
+		if(nome != null && !nome.trim().isEmpty()) {
+			itens.add(new Produto(nome, preco));
 		}
+		double novoTotal = 0.0;
+		for (Produto p : itens) {
+			novoTotal += p.getPreco();
+		}
+		session.setAttribute("total_compra", novoTotal);
 		session.setAttribute("carrinho", itens);
+		response.getWriter().println("Produto " + nome + " adicionado!");
+		response.getWriter().println("Total atual na sessao: R$ " + novoTotal);
 		response.sendRedirect("ExibirCarrinhoServlet");
 	}
 
