@@ -9,6 +9,8 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 import java.util.List;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 /**
  * Servlet implementation class ExibirCarrinhoServlet
@@ -23,6 +25,9 @@ public class ExibirCarrinhoServlet extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
+    
+    Locale ptBr = Locale.of("pt", "BR");
+    NumberFormat nfBR = NumberFormat.getCurrencyInstance(ptBr);
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -31,18 +36,20 @@ public class ExibirCarrinhoServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		HttpSession session = request.getSession();
-		List<String> itens = (List<String>)session.getAttribute("carrinho");
+		List<Produto> itens = (List<Produto>)session.getAttribute("carrinho");
+		double total = (Double) session.getAttribute("total_compra"); 
 		var out = response.getWriter();
 		out.println("<html><head><meta charset=\"UTF-8\"></head><body><h2>Itens no seu Carrinho:</h2><ul>");
 		if(itens != null && !itens.isEmpty()) {
-			for(String item : itens) {
-				out.println("<li>" + item + "</li>");
+			for(Produto item : itens) {
+				out.println("<li>" + item.getNome() + "<br>" + nfBR.format(item.getPreco()) + "</li>");
 			} 
 			
 		}else {
 			out.println("<p>O carrinho está vazio!</p>");
 		}
 		out.println("</ul>");
+		out.println("O valor total do carrinho é: " + nfBR.format(total) + "<br><br>");
 		out.println("<a href='index.html'>Adicionar mais</a> | ");
 		out.println("<a href='Logout'>Limpar Sessão (Logout)</a>");
 		out.println("</body></html>");
