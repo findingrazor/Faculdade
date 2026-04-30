@@ -27,6 +27,9 @@ noArvore* inserirNo(noArvore *raiz, int codigo);
 void percorrerIn(noArvore *raiz);
 void percorrerPre(noArvore *raiz);
 void percorrerPos(noArvore *raiz);
+void pesquisarNo(int cod, noArvore **no, noArvore **pai);
+int solicitarNo();
+
 
 int main(void) {
 	setbuf(stdout, NULL);
@@ -38,6 +41,8 @@ void menu(){
 	int op;
 	int cod;
 	noArvore *arvore = NULL;
+	noArvore *busca = NULL;
+	noArvore *paiBusca = NULL;
 
 	do{
 		printf("\n1 - Inserir nó"
@@ -55,6 +60,10 @@ void menu(){
 			percorrerIn(arvore);
 			break;
 		case 2:
+			cod = solicitarNo();
+			busca = arvore;
+			pesquisarNo(cod, &busca, &paiBusca);
+			printf("\nNó %p - Pai %p", busca, paiBusca);
 			break;
 		case 3:
 			break;
@@ -115,5 +124,28 @@ void percorrerPos(noArvore *raiz){
 
 	}
 
+}
+
+void pesquisarNo(int cod, noArvore **no, noArvore **pai){
+	if((*no)){
+		if((*no)->codigo != cod){
+			if(cod < ((*no)->codigo)){
+				(*no) = (*no)->esquerda;
+			}else{
+				(*no) = (*no)->direita;
+			}
+			(*pai) = (*no);
+			return pesquisarNo(cod, no, pai);
+		}
+	}
+}
+
+int solicitarNo(){
+	int cod;
+	do{
+		printf("\nNó pesquisado: ");
+		scanf(" %i", &cod);
+	}while(cod < 0);
+	return cod;
 }
 
