@@ -152,7 +152,7 @@
     <img src="https://skillicons.dev/icons?i=python" width=30/>
 </a>
 <h4>
- A parte inicial da matéria deu uma introdução sobre a própria linguagem python, apresentando tipos simples e complexos, declaração de funções e outros conceitos básicos da linguagem python
+ A parte inicial da matéria deu uma introdução sobre a própria linguagem python, apresentando tipos simples e complexos, declaração de funções e outros conceitos básicos da linguagem python. Na segundo parte trabalhamos com a biblioteca Pandas e com a biblioteca NumPy para trabalhar dados, montar gráficos e fazer treinamento de algortimo
 </h4>
 
 <br><br>
