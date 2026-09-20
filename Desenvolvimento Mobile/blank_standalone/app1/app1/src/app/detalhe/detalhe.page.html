@@ -1,0 +1,50 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>detalhe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Projeto Extensão</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-item>
+      <ion-input label="Nome Aplicativo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Aluno 1" placeholder="NOME ALUNO 1"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Aluno 2" value="NOME ALUNO 2"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Professor" value="prof. Luiz Maia" [readonly]="true"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input label="Coordenador" value="profs. Becsom Sales e Air Rabelo" [disabled]="true"></ion-input>
+    </ion-item>
+  </ion-list>
+  <br>
+  &nbsp;&nbsp;<ion-button [routerLink]="'/home'">Voltar</ion-button>
+  <br>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Ciência da Computação</ion-card-title>
+      <ion-card-subtitle>Universidade FUMEC</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </ion-card-content>
+  </ion-card>
+</ion-content>
