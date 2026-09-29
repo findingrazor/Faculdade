@@ -1,0 +1,130 @@
+
+<ion-card-title class="ion-text-center">
+  <h3>{{etapa}}</h3>
+</ion-card-title>
+
+<ion-card-content [formGroup]="formDois">
+
+  <ion-item>
+    <ion-label position="floating">Rua</ion-label>
+    <ion-input aria-label="rua" type="text" id="rua" name="rua" formControlName="rua"></ion-input>
+    
+    <ion-text color="danger" *ngIf="(formDois.get('rua')?.errors?.['required'] || 
+        formDois.get('rua')?.errors?.['minlength'] 
+        || formDois.get('rua')?.errors?.['maxlength']) && 
+        formDois.get('rua')?.touched">
+    Informe a rua!
+    </ion-text>
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label position="floating">Número</ion-label>
+    <ion-input aria-label="numero" type="text" id="numero" name="numero" formControlName="numero"></ion-input>
+    
+    <ion-text color="danger" *ngIf="(formDois.get('numero')?.errors?.['required'] || 
+        formDois.get('numero')?.errors?.['min']) && 
+        formDois.get('rua')?.touched">
+    Informe o número da residência!
+    </ion-text>
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="floating">Complemento</ion-label>
+    <ion-input aria-label="complemento" type="text" id="complemento" name="complemento" formControlName="complemento"></ion-input>
+    
+    <ion-text color="danger"*ngIf="(formDois.get('complemento')?.errors?.['required'] || 
+        formDois.get('complemento')?.errors?.['minlength'] 
+        || formDois.get('complemento')?.errors?.['maxlength']) && 
+        formDois.get('complemento')?.touched">
+    Informe o complemento!
+    </ion-text>
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label position="floating">CEP</ion-label>
+    <ion-input aria-label="cep" type="text" id="cep" name="cep" formControlName="cep"></ion-input>
+    
+    <ion-text color="danger" *ngIf="(formDois.get('cep')?.errors?.['required'] || 
+        formDois.get('cep')?.errors?.['minlength'] 
+        || formDois.get('cep')?.errors?.['maxlength']) && 
+        formDois.get('cep')?.touched">
+    Informe o CEP corretamente!
+    </ion-text>
+
+    <ion-text color="danger" *ngIf="(formDois.get('cep')?.errors?.['cepInvalido']) && 
+        formDois.get('cep')?.touched">
+    CEP inválido!
+    </ion-text>
+
+  </ion-item>
+
+
+
+
+  <ion-item>
+    <ion-label position="floating">Bairro</ion-label>
+    <ion-input aria-label="bairro" type="text" id="bairro" name="bairro" formControlName="bairro"></ion-input>
+    
+    <ion-text color="danger" *ngIf="(formDois.get('bairro')?.errors?.['required'] || 
+        formDois.get('bairro')?.errors?.['minlength'] 
+        || formDois.get('bairro')?.errors?.['maxlength']) && 
+        formDois.get('bairro')?.touched">
+    Informe o bairro!
+    </ion-text>
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label position="floating">Cidade</ion-label>
+    <ion-input aria-label="cidade" type="text" id="cidade" name="cidade" formControlName="cidade"></ion-input>
+    
+    <ion-text color="danger" *ngIf="(formDois.get('cidade')?.errors?.['required'] || 
+        formDois.get('cidade')?.errors?.['minlength'] 
+        || formDois.get('cidade')?.errors?.['maxlength']) && 
+        formDois.get('cidade')?.touched">
+    Informe a cidade!
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">UF</ion-label>
+    <ion-input aria-label="uf" type="text" id="uf" name="uf" formControlName="uf"></ion-input>
+    
+    <ion-text color="danger" *ngIf="(formDois.get('uf')?.errors?.['required'] || 
+        formDois.get('uf')?.errors?.['minlength'] 
+        || formDois.get('uf')?.errors?.['maxlength']) && 
+        formDois.get('uf')?.touched">
+    Informe a UF!
+    </ion-text>
+  </ion-item>
+
+
+</ion-card-content>
+
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="6">
+      <ion-button [routerLink]="['../etapa-01']" expand="block" shape="round">
+        Voltar
+      </ion-button>
+    </ion-col>
+
+    <ion-col size="6">
+      <ion-button [routerLink]="['../etapa-03']" expand="block" shape="round">
+        Próximo
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+    
+
+

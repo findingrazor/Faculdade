@@ -1,0 +1,89 @@
+
+<ion-card-title class="ion-text-center">
+  <h3>{{etapa}}</h3>
+</ion-card-title>
+
+<ion-card-content [formGroup]="formTres">
+
+  <ion-item>
+    <ion-label position="floating">Curso</ion-label>
+    <ion-input aria-label="curso" type="text" id="curso" name="curso" formControlName="curso"></ion-input>
+    
+    <ion-text color="danger" *ngIf="(formTres.get('curso')?.errors?.['required'] || 
+        formTres.get('curso')?.errors?.['minlength'] 
+        || formTres.get('curso')?.errors?.['maxlength']) && 
+        formTres.get('curso')?.touched">
+    Informe o curso!
+    </ion-text>
+  </ion-item>
+
+
+  
+  <ion-item>
+
+    
+      <ion-select label="Nível" placeholder="Nível" id="nivel" name="nivel" formControlName="nivel">
+        <ion-select-option value="graduação">Graduação</ion-select-option>
+        <ion-select-option value="especialização">Especialização</ion-select-option>
+        <ion-select-option value="mestrado">Mestrado</ion-select-option>
+        <ion-select-option value="doutorado">Doutorado</ion-select-option>
+      </ion-select>
+    
+    
+    <ion-text color="danger" *ngIf="(formTres.get('nivel')?.errors?.['required']) && 
+        formTres.get('nivel')?.touched">
+    Selecione o nível!
+    </ion-text>
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label position="floating">Profissão</ion-label>
+    <ion-input aria-label="profissao" type="text" id="profissao" name="profissao" formControlName="profissao"></ion-input>
+    
+    <ion-text color="danger" *ngIf="(formTres.get('profissao')?.errors?.['required'] || 
+        formTres.get('profissao')?.errors?.['minlength'] 
+        || formTres.get('profissao')?.errors?.['maxlength']) && 
+        formTres.get('profissao')?.touched">
+    Informe a profissão!
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Tempo de experiência</ion-label>
+    <ion-input aria-label="tempoExperiencia" type="number" id="tempoExperiencia" name="tempoExperiencia" formControlName="tempoExperiencia"></ion-input>
+    
+    <ion-text color="danger" *ngIf="(formTres.get('tempoExperiencia')?.errors?.['required'] || 
+        formTres.get('tempoExperiencia')?.errors?.['min']) && 
+        formTres.get('tempoExperiencia')?.touched">
+    Digite o tempo de experiência!
+    </ion-text>
+  </ion-item>
+
+
+
+
+</ion-card-content>
+
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="6">
+      <ion-button [routerLink]="['../etapa-02']" expand="block" shape="round">
+        Voltar
+      </ion-button>
+    </ion-col>
+
+    <ion-col size="6">
+      <ion-button [routerLink]="['../final']" expand="block" shape="round">
+        Finalizar
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+
+
+    
+
+

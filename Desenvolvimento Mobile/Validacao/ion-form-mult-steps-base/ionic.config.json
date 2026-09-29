@@ -1,0 +1,7 @@
+{
+  "name": "ion-form-mult-steps",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,197 @@
+<!--
+<ion-card-title class="ion-text-center" *ngIf="this.formFinal.valid">
+  <h3>{{etapa}}</h3>
+</ion-card-title>
+-->
+<ion-card-title class="ion-text-center">
+  <h3>{{etapa}}</h3>
+</ion-card-title>
+
+<!--
+<ion-card-content [formGroup]="formFinal" *ngIf="this.formFinal.valid">
+-->
+
+<ion-card-content [formGroup]="formFinal">
+
+  <div formGroupName="etapaUm">
+    <ion-item>
+      <ion-label position="fixed">Nome</ion-label>
+      <ion-input aria-label="nome" type="text" id="nome" name="nome" formControlName="nome" readonly></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">Sobrenome</ion-label>
+      <ion-input aria-label="sobrenome" type="text" id="sobrenome" name="sobrenome" formControlName="sobrenome" readonly></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">CPF</ion-label>
+      <ion-input aria-label="cpf" type="text" id="cpf" name="cpf" formControlName="cpf" readonly></ion-input>
+    </ion-item>
+
+
+
+    
+    
+
+    
+    
+
+    <ion-list>
+      <ion-list-header>
+        <ion-label><h3>Gênero</h3></ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-text>
+          <h4>{{genero}}</h4>
+        </ion-text>
+      </ion-item>
+  
+    </ion-list>
+
+
+  <ion-item>
+    <ion-label>Nascimento</ion-label>
+
+     <ion-item>
+        <ion-text>
+          <h4>{{dataNascimento | date}}</h4>
+        </ion-text>
+      </ion-item>
+
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label position="floating">E-mail</ion-label>
+    <ion-input aria-label="email" type="text" id="email" name="email" formControlName="email"></ion-input>
+    
+  </ion-item>
+
+
+
+
+
+  <ion-item>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input aria-label="senha" type="password" id="senha" name="senha" formControlName="senha"></ion-input>
+    
+  </ion-item>
+
+    
+</div>
+
+
+
+<div formGroupName="etapaDois">
+   
+  
+  <ion-item>
+    <ion-label position="floating">Rua</ion-label>
+    <ion-input aria-label="rua" type="text" id="rua" name="rua" formControlName="rua"></ion-input>
+    
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label position="floating">Número</ion-label>
+    <ion-input aria-label="numero" type="text" id="numero" name="numero" formControlName="numero"></ion-input>
+    
+  </ion-item>
+
+
+  <ion-item>
+    <ion-label position="floating">Complemento</ion-label>
+    <ion-input aria-label="complemento" type="text" id="complemento" name="complemento" formControlName="complemento"></ion-input>
+    
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label position="floating">CEP</ion-label>
+    <ion-input aria-label="cep" type="text" id="cep" name="cep" formControlName="cep"></ion-input>
+
+  </ion-item>
+
+
+
+
+  <ion-item>
+    <ion-label position="floating">Bairro</ion-label>
+    <ion-input aria-label="bairro" type="text" id="bairro" name="bairro" formControlName="bairro"></ion-input>
+    
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label position="floating">Cidade</ion-label>
+    <ion-input aria-label="cidade" type="text" id="cidade" name="cidade" formControlName="cidade"></ion-input>
+    
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">UF</ion-label>
+    <ion-input aria-label="uf" type="text" id="uf" name="uf" formControlName="uf"></ion-input>
+    
+  </ion-item>
+
+</div>
+
+
+
+<div formGroupName="etapaTres">
+
+
+  <ion-item>
+    <ion-label position="floating">Curso</ion-label>
+    <ion-input aria-label="curso" type="text" id="curso" name="curso" formControlName="curso"></ion-input>
+    
+  </ion-item>
+
+    
+    
+  <ion-item>
+    <ion-label>Nível da formação</ion-label>
+
+     <ion-item>
+        <ion-text>
+          <h4>{{formacaoNivel}}</h4>
+        </ion-text>
+      </ion-item>
+
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-label position="floating">Profissão</ion-label>
+    <ion-input aria-label="profissao" type="text" id="profissao" name="profissao" formControlName="profissao"></ion-input>
+    
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Tempo de experiência</ion-label>
+    <ion-input aria-label="tempoExperiencia" type="number" id="tempoExperiencia" name="tempoExperiencia" formControlName="tempoExperiencia"></ion-input>
+    
+  </ion-item>
+    
+    
+     
+</div>
+
+
+
+
+
+
+</ion-card-content>
+
+
+    
+
+
