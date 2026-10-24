@@ -1,0 +1,82 @@
+<div class="ion-page" id="main-content">
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button class="botao-seta">
+          <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <div class="ion-padding">
+      <div class="texto-container">
+        <h1 class="titulo">Novo Produto</h1>
+      </div>
+      <br><br>
+      <div class="upload-container">
+        <label class="caixa-imagem">
+          <!-- <img class="imagem-preview" alt="Imagem do produto" src="null"/> -->
+          <ion-icon name="add-circle" class="icone-adicionar">
+          </ion-icon>
+        </label>
+        <input type="file" id="input-imagem" accept="image/*" hidden />
+
+      </div>
+      <div class="input-container">
+        <ion-list class="input-list">
+          <div class="campo-grupo">
+            <h2 class="titulo">Produto</h2>
+            <ion-item class="campo">
+              <ion-input value="ex: Sabonete Amarelo"></ion-input>
+              <ion-button slot="end" class="botao-lapis">
+                <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </div>
+          <br>
+          <div class="campo-grupo">
+            <h2 class="titulo">Marca</h2>
+            <ion-item class="campo">
+              <ion-input value="ex: Marca"></ion-input>
+              <ion-button slot="end" class="botao-lapis">
+                <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </div>
+          <br>
+          <div class="campo-grupo">
+            <h2 class="titulo">Categoria</h2>
+            <ion-item class="campo">
+              <ion-input value="ex: Categoria"></ion-input>
+              <ion-button slot="end" class="botao-lapis">
+                <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </div>
+          <br>
+          <div class="campo-grupo">
+            <h2 class="titulo">Valor</h2>
+            <ion-item class="campo campo-alt">
+              <b>R$</b>
+              <ion-input placeholder="99,99"></ion-input>
+              <ion-button slot="end" class="botao-lapis">
+                <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </div>
+        </ion-list>
+      </div>
+      <div class="buttons-container">
+        <ion-button shape="round">SALVAR</ion-button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-art">
+        <img class="onda onda-1" src="assets/footer/onda1.svg" alt="" />
+        <img class="onda onda-2" src="assets/footer/onda2.svg" alt="" />
+        <img class="onda onda-3" src="assets/footer/onda3.svg" alt="" />
+      </div>
+    </div>
+  </ion-content>
+</div>

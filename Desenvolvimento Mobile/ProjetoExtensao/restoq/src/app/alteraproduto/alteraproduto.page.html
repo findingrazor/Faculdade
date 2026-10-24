@@ -1,0 +1,89 @@
+<div class="ion-page" id="main-content">
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button class="botao-seta">
+          <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <div class="ion-padding">
+      <div class="texto-container">
+        <h1 class="titulo">Produto</h1>
+      </div>
+      <br><br>
+      <div class="produto-edicao">
+        <div class="imagem-container">
+          <label class="caixa-imagem-edicao">
+            <img class="imagem-preview" alt="Imagem do produto" src="https://ionicframework.com/docs/img/demos/card-media.png"/>
+            <ion-icon name="pencil" class="lapis-imagem">
+            </ion-icon>
+          </label>
+          <input type="file" id="input-imagem" hidden />
+        </div>
+        <div class="informacoes-edicao">
+          <div class="nome-container">
+            <h2 class="nome-edicao titulo">
+              nativaSPA Orquídea Lumière
+            </h2>
+            <ion-icon name="pencil" class="lapis-nome">
+            </ion-icon>
+          </div>
+          <span class="codigo-edicao"># 123456</span>
+          <span class="categoria-edicao">CATEGORIA</span>
+          <span class="categoria-edicao">CREME</span>
+          <span class="quantidade-edicao">QTD. EM ESTOQUE</span>
+          <span class="quantidade-edicao">5</span>
+        </div>
+      </div>
+      <div class="input-container">
+        <ion-list class="input-list">
+          <div class="campo-grupo">
+            <h2 class="titulo">Produto</h2>
+            <ion-item class="campo">
+              <ion-input value="Sabonete Amarelo"></ion-input>
+              <ion-button slot="end" class="botao-lapis">
+                <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </div>
+          <br>
+          <div class="campo-grupo" style="flex-direction: row;gap: 80px;">
+            <div style="width: max-content;">
+              <h2 class="titulo">Valor</h2>
+              <ion-item class="campo campo-alt" style="width: 120px;">
+                <b>R$</b>
+                <ion-input value="99,99"></ion-input>
+                <ion-button slot="end" class="botao-lapis">
+                  <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
+                </ion-button>
+              </ion-item>
+            </div>
+            <div style="width: fit-content;">
+              <h2 class="titulo">Marca</h2>
+              <ion-item class="campo campo-alt" style="width: 150px;">
+                <ion-input value="Marca"></ion-input>
+                <ion-button slot="end" class="botao-lapis">
+                  <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
+                </ion-button>
+              </ion-item>
+            </div>
+          </div>
+        </ion-list>
+      </div>
+      <div class="buttons-container">
+        <ion-button shape="round">SALVAR</ion-button>
+        <ion-button fill="outline" class="button-alt" style="width: max-content;">EXCLUIR PRODUTO</ion-button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-art">
+        <img class="onda onda-1" src="assets/footer/onda1.svg" alt="" />
+        <img class="onda onda-2" src="assets/footer/onda2.svg" alt="" />
+        <img class="onda onda-3" src="assets/footer/onda3.svg" alt="" />
+      </div>
+    </div>
+  </ion-content>
+</div>

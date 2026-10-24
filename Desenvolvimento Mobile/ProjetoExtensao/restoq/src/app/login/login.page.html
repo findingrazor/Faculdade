@@ -1,0 +1,51 @@
+<div class="ion-page" id="main-content">
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-title></ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <div class="ion-padding">
+      <div class="texto-container">
+        <h1 class="titulo">Login</h1>
+      </div>
+      <br>
+      <div class="input-container">
+        <ion-list class="input-list">
+          <div class="campo-grupo">
+            <h4 class="titulo-input">Email</h4>
+            <ion-item class="campo">
+              <ion-input type="email"></ion-input>
+              <ion-icon slot="start" name="mail"></ion-icon>
+            </ion-item>
+          </div>
+          <br>
+          <div class="campo-grupo">
+            <h4 class="titulo-input">Senha</h4>
+            <ion-item class="campo">
+              <ion-input type="password"></ion-input>
+              <ion-icon slot="start" name="bag"></ion-icon>
+            </ion-item>
+          </div>
+        </ion-list>
+      </div>
+      <div class="opcoes-login">
+        <ion-radio-group value="end" [allowEmptySelection]="true" value="turtles">
+          <ion-radio value="end" labelPlacement="end" value="Lembre de mim">Lembre de mim</ion-radio>
+        </ion-radio-group>
+        <a class="link-senha" href="">Esqueci minha senha</a>
+      </div>
+      <div class="buttons-container">
+        <ion-button shape="round">ENTRAR</ion-button>
+        <ion-button fill="outline" class="button-alt">CADASTRE-SE</ion-button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-art">
+        <img class="onda onda-1" src="assets/footer/onda4.svg" alt="" />
+        <img class="onda onda-2" src="assets/footer/onda5.svg" alt="" />
+        <img class="onda onda-3" src="assets/footer/onda6.svg" alt="" />
+      </div>
+    </div>
+  </ion-content>
+</div>

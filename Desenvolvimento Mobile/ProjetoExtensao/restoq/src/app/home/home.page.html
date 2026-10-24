@@ -1,13 +1,169 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Home</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-menu contentId="main-content" side="start" menuId="menu-principal">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-content class="menu-content">
+
+
+    <div class="menu-header">
+      <ion-button fill="clear" class="botao-fechar-menu" (click)="fecharMenu()">
+        <ion-icon name="close" slot="icon-only"></ion-icon>
+      </ion-button>
+    </div>
+
+    <div class="menu-opcoes">
+
+      <div class="menu-item" routerLink="/estoque" (click)="fecharMenu()">
+        <ion-icon name="archive"></ion-icon>
+        <span>Estoque</span>
+      </div>
+
+      <div class="menu-item" routerLink="/pedidos" (click)="fecharMenu()">
+        <ion-icon name="cart"></ion-icon>
+        <span>Pedidos</span>
+      </div>
+
+      <div class="menu-item" routerLink="/vendas" (click)="fecharMenu()">
+        <ion-icon name="bag-handle"></ion-icon>
+        <span>Vendas</span>
+      </div>
+
+      <div class="menu-item" routerLink="/clientes" (click)="fecharMenu()">
+        <ion-icon name="person"></ion-icon>
+        <span>Clientes</span>
+      </div>
+
+      <div class="menu-item" routerLink="/cadastrovenda" (click)="fecharMenu()">
+        <ion-icon name="add-circle"></ion-icon>
+        <span>Nova Venda</span>
+      </div>
+
+      <div class="menu-item" routerLink="/cadastrocliente">
+        <ion-icon name="add-circle"></ion-icon>
+        <span>Novo Cliente</span>
+      </div>
+    </div>
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header class="ion-no-border">
     <ion-toolbar>
-      <ion-title size="large">Home</ion-title>
+      <ion-buttons slot="start">
+        <div class="side-menu-container">
+          <ion-menu-button class="side-menu"></ion-menu-button>
+        </div>
+      </ion-buttons>
+      <ion-title></ion-title>
+      <ion-buttons slot="end">
+        <ion-avatar>
+          <img class="avatar" alt="avatar" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
-</ion-content>
+  <ion-content>
+    <div class="ion-padding">
+      <div>
+        <h1 class="titulo">Olá, Fulano</h1>
+        <p class="texto">Já conferiu seu estoque hoje?</p>
+      </div>
+      <br><br>
+      <div>
+        <div class="topicos-header">
+          <h2 class="titulo">Produtos</h2>
+          <ion-button class="botao-seta">
+            <ion-icon name="arrow-forward" slot="icon-only"></ion-icon>
+          </ion-button>
+        </div>
+        <swiper-container slides-per-view="auto" space-between="8">
+          <swiper-slide class="slide">
+            <ion-card class="card">
+              <img class="produtos-card-img" src="https://ionicframework.com/docs/img/demos/card-media.png"
+                alt="The Wisconsin State Capitol building in Madison, WI at night" />
+              <ion-card-header>
+                <ion-card-subtitle class="categoria-data-cod">Categoria</ion-card-subtitle>
+                <ion-card-title class="nome-produto">Produto Incrível</ion-card-title>
+              </ion-card-header>
+              <ion-card-content class="marca-cliente">Marca</ion-card-content>
+            </ion-card>
+          </swiper-slide>
+          <swiper-slide class="slide">
+            <ion-card class="card">
+              <img class="produtos-card-img" src="https://ionicframework.com/docs/img/demos/card-media.png"
+                alt="The Wisconsin State Capitol building in Madison, WI at night" />
+              <ion-card-header>
+                <ion-card-subtitle class="categoria-data-cod">Categoria</ion-card-subtitle>
+                <ion-card-title class="nome-produto">Produto Top</ion-card-title>
+              </ion-card-header>
+              <ion-card-content class="marca-cliente">Marca</ion-card-content>
+            </ion-card>
+          </swiper-slide>
+          <swiper-slide class="slide">
+            <ion-card class="card">
+              <img class="produtos-card-img" src="https://ionicframework.com/docs/img/demos/card-media.png"
+                alt="The Wisconsin State Capitol building in Madison, WI at night" />
+              <ion-card-header>
+                <ion-card-subtitle class="categoria-data-cod">Categoria</ion-card-subtitle>
+                <ion-card-title class="nome-produto">Produto</ion-card-title>
+              </ion-card-header>
+              <ion-card-content class="marca-cliente">Marca</ion-card-content>
+            </ion-card>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+      <br><br>
+      <div>
+        <div class="topicos-header">
+          <h2 class="titulo">Último Pedido</h2>
+          <ion-button class="botao-seta">
+            <ion-icon name="arrow-forward" slot="icon-only"></ion-icon>
+          </ion-button>
+        </div>
+        <ion-card class="card">
+          <div class="topicos-header">
+            <div style="display: flex;">
+              <img class="pedidos-card-img" alt="Silhouette of mountains"
+                src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-subtitle class="categoria-data-cod"># 12345</ion-card-subtitle>
+                <ion-card-title class="nome-produto">4x Produto Top</ion-card-title>
+                <ion-card-subtitle class="categoria-data-cod">Marca</ion-card-subtitle>
+                <ion-card-subtitle class="categoria-data-cod">01/01/2000</ion-card-subtitle>
+              </ion-card-header>
+            </div>
+            <ion-icon class="check" name="checkmark-circle" slot="icon-only"></ion-icon>
+          </div>
+        </ion-card>
+      </div>
+      <br><br>
+      <div>
+        <div class="topicos-header">
+          <h2 class="titulo">Última Venda</h2>
+          <ion-button class="botao-seta">
+            <ion-icon name="arrow-forward" slot="icon-only"></ion-icon>
+          </ion-button>
+        </div>
+        <ion-card class="card">
+          <div class="topicos-header">
+            <div style="display: flex;">
+              <img class="pedidos-card-img" alt="Silhouette of mountains"
+                src="https://ionicframework.com/docs/img/demos/card-media.png" />
+              <ion-card-header>
+                <ion-card-subtitle class="categoria-data-cod"># 12345</ion-card-subtitle>
+                <ion-card-title class="nome-produto">4x Produto Top</ion-card-title>
+                <ion-card-subtitle class="categoria-data-cod">Cliente</ion-card-subtitle>
+                <ion-card-subtitle class="categoria-data-cod">01/01/2000</ion-card-subtitle>
+              </ion-card-header>
+            </div>
+            <ion-icon class="check" name="checkmark-circle" slot="icon-only"></ion-icon>
+          </div>
+        </ion-card>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-art">
+        <img class="onda onda-1" src="assets/footer/onda1.svg" alt="" />
+        <img class="onda onda-2" src="assets/footer/onda2.svg" alt="" />
+        <img class="onda onda-3" src="assets/footer/onda3.svg" alt="" />
+      </div>
+    </div>
+  </ion-content>
+</div>

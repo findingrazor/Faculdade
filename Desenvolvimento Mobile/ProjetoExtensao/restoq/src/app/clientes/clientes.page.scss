@@ -1,0 +1,489 @@
+@font-face {
+  font-family: 'Dela-Gothic-One';
+  src: url('../../fonts/delaGothicOne/DelaGothicOne-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ion-content {
+  --background: #ffffff;
+  --color: #E2828F;
+  padding: 0px;
+}
+
+.titulo {
+  font-family: 'Dela-Gothic-One';
+  position: relative;
+  margin: 0px;
+}
+
+.texto {
+  position: relative;
+  margin: 0px;
+  color: #E2828F;
+}
+
+ion-toolbar {
+  --background: #ffffff;
+  --color: #E2828F;
+
+  --border-width: 0px;
+  --border-color: transparent;
+  --box-shadow: none;
+
+  --padding-start: 15px;
+  --padding-end: 15px;
+  --min-height: 85px;
+
+}
+
+ion-header {
+  --border-width: 0px;
+  --border-color: transparent;
+  --box-shadow: none;
+}
+
+.side-menu-container {
+  width: 49px;
+  height: 49px;
+
+  border: 3px solid #E2828F;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-menu {
+  --color: #E2828F;
+  --background: transparent;
+
+  width: 100%;
+}
+
+ion-avatar {
+  width: 48px;
+  height: 43px;
+  flex: 0 0 43px;
+  overflow: hidden;
+}
+
+.ion-padding{
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --padding-top: 0px;
+}
+
+.card {
+  --background: #E2828F;
+  --color: #fff;
+  width: 100%;
+  margin: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.produtos-card-img {
+  display: block;
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.vendas-card-img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px 8px;
+}
+
+.card ion-card-content{
+  padding: 0px 10px 8px;
+}
+.card ion-card-content, ion-card-title, ion-card-subtitle {
+  color: #fff;
+  margin: 0px;
+}
+
+swiper-slide {
+  display: flex;
+  width: 140px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+swiper-container {
+  display: block;
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.categoria-data-cod {
+  margin: 8px 0px 2px;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.nome-produto {
+  font-size: 15px;
+  font-weight: bold;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.marca-cliente {
+  margin: 0;
+  font-size: 11.5px;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ion-card-header{
+  padding: 5px 10px;
+}
+
+.topicos-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 8px;
+}
+
+.topicos-header .titulo {
+  margin: 0;
+}
+
+.botao-seta {
+  --background: transparent;
+  --background-activated: transparent;
+  --background-hover: transparent;
+  --background-activated: transparent;
+  --background-focused: transparent;
+  --color: #E2828F;
+  --color-hover: #E2828F;
+  --color-activated: #E2828F;
+  --color-focused: #E2828F;
+  
+  --padding-start: 0;
+  --padding-end: 0;
+  --border-width: 0px;
+  --border-color: transparent;
+  --box-shadow: none;
+  --ripple-color: transparent;
+
+  width: 44px;
+  height: 40px;
+  margin: 0;
+}
+
+.botao-seta ion-icon {
+  font-size: 28px;
+}
+
+.check {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  font-size: 24px;
+  color: #ffffff;
+}
+
+
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  margin-top: 32px;
+  overflow: hidden;
+}
+
+.footer-art {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.onda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.onda-1 {
+  z-index: 1;
+}
+
+.onda-2 {
+  z-index: 2;
+}
+
+.onda-3 {
+  z-index: 3;
+}
+
+.buttons-container{
+    margin-top: 25px;
+  display: flex;
+  width: 100%;
+}
+
+ion-button {
+    --inner-padding-start: 0px;
+    --inner-padding-end: 0px;
+    width: 190px;
+    --color: #FFF;
+    --background: #E2828F;
+    --background: #E2828F;
+  --background-activated: #E2828F;
+  --background-hover: #E2828F;
+  --background-activated: #E2828F;
+  --background-focused: #E2828F;
+  --color-hover: #FFF;
+  --color-activated: #FFF;
+  --color-focused: #FFF;
+}
+
+.input-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.campo-grupo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.campo {
+  width: 100%;
+  --background: #ffffff;
+  --color:#E2828F;
+  --border-color: #E2828F;
+  --border-width: 0px;
+  --border-style: solid;
+  --border-radius: 0px;
+  --padding-start: 0px;
+  --inner-padding-start: 0px;
+  --inner-padding-end: 0px;
+
+}
+
+.barra-acoes {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+
+.busca-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  height: 38px;
+  border-bottom: 1px solid #E2828F;
+}
+
+.busca-input {
+  flex: 1;
+  min-width: 0;
+  --color: #E2828F;
+  --placeholder-color: #E2828F;
+  --placeholder-opacity: 1;
+  --padding-start: 0;
+  --padding-end: 8px;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.botao-busca {
+  flex: 0 0 25px;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  --background: #E2828F;
+  --background-hover: #E2828F;
+  --background-activated: #E2828F;
+  --color: #ffffff;
+  --border-radius: 50%;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.botao-busca ion-icon {
+  font-size: 17px;
+}
+
+.acoes-busca {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.botao-filtro,
+.botao-ordenar {
+  flex: 0 0 25px;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  --background: #E2828F;
+  --background-hover: #E2828F;
+  --background-activated: #E2828F;
+  --color: #ffffff;
+  --border-radius: 50%;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.botao-filtro ion-icon,
+.botao-ordenar ion-icon {
+  font-size: 17px;
+}
+
+.botao-novo-produto {
+  width: 130px;
+  height: 36px;
+  font-size: 12px;
+  --padding-start: 12px;
+  --padding-end: 12px;
+}
+
+.card-produto {
+  display: block;
+  width: 100%;
+  height: 70px;
+  margin: 0 0 10px;
+  background: #E2828F;
+  border-radius: 7px;
+  overflow: hidden;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.card-cliente {
+  width: 100%;
+  height: 80px;
+  margin: 0 0 10px;
+  background: #E2828F;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-cliente-conteudo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.info-cliente {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  min-width: 0;
+  gap: 4px;
+  color: #fff;
+}
+
+.nome-cliente {
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.telefone-cliente {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.icone-editar {
+  flex-shrink: 0;
+  margin-top: 2px;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.botao-seta {
+  --background: transparent;
+  --background-hover: transparent;
+  --background-activated: transparent;
+  --color: #E2828F;
+
+  --padding-start: 0;
+  --padding-end: 0;
+
+  width: 44px;
+  height: 40px;
+  margin: 0;
+}
+
+.botao-seta ion-icon {
+  font-size: 28px;
+  color: #E2828F;
+}
+
+ion-toolbar ion-buttons[slot="start"] {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+
+ion-toolbar ion-button.botao-seta {
+  display: inline-flex;
+  visibility: visible;
+  opacity: 1;
+
+  width: 44px;
+  min-width: 44px;
+  max-width: 44px;
+  height: 44px;
+  margin: 0;
+
+  --width: 44px;
+  --min-width: 44px;
+  --background: transparent;
+  --color: #E2828F;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+ion-toolbar ion-button.botao-seta ion-icon {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  color: #E2828F;
+  font-size: 28px;
+}
